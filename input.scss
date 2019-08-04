@@ -38,7 +38,7 @@ body {
     // background-color:lighten($bg-color, 20%);
     // background-color:saturate($bg-color, 15%);
     // background-color: desaturate($bg-color, 20%);
-    background-color: rgba($bg-color, .9);
+    background-color: rgba($bg-color, .4);
 }
 
 h1{
@@ -72,19 +72,27 @@ button{
     @include blockButton()
 }
 
+//extend helps you to keep your code DRY. this className is directly defined in scss file
+.common{
+    width:(100% / 2);
+    height:100px;
+}
+
 //adding basic arithmetic in sass (+, -, %, *)
 .container{
     width:100%;
     .leftContainer{
         float: left;
         background-color:red;
-        width:(100% / 2);
-        height:100px;
+        // width:(100% / 2);
+        // height:100px;
+        @extend .common;
     }
     .rightContainer{
         float: right;
         background-color:yellow;
-        width:(100% / 2);
-        height:double(50px);
+        // width:(100% / 2);
+        // height:double(50px);
+        @extend .common;
     }
 }

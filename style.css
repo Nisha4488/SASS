@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(255, 165, 0, 0.9);
+  background-color: rgba(255, 165, 0, 0.4);
 }
 
 h1 {
@@ -32,20 +32,21 @@ button {
   padding: 15px 30px;
 }
 
+.common, .container .rightContainer, .container .leftContainer {
+  width: 50%;
+  height: 100px;
+}
+
 .container {
   width: 100%;
 }
 .container .leftContainer {
   float: left;
   background-color: red;
-  width: 50%;
-  height: 100px;
 }
 .container .rightContainer {
   float: right;
   background-color: yellow;
-  width: 50%;
-  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
