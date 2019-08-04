@@ -11,6 +11,8 @@
 
 // $theme-color:red;
 
+$bg-color: orange;
+
 
 //used as function
 //passing argument to make it dynamic..we need to pass default value in argument..in case we forget to pass argument down
@@ -25,7 +27,18 @@
 
 //creating custom function
 @function double($a){
-    @return ($a*2)
+    @return ($a*2);
+}
+
+
+//using inbuilt sass function e.g darken, lighten, saturate, desaturate, adding transparency using rgba inbuilt function
+body{
+    // background-color: $bg-color;
+    // background-color: darken($bg-color, 15%);
+    // background-color:lighten($bg-color, 20%);
+    // background-color:saturate($bg-color, 15%);
+    // background-color: desaturate($bg-color, 20%);
+    background-color: rgba($bg-color, .9);
 }
 
 h1{
