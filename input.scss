@@ -1,0 +1,47 @@
+//used as variable
+
+$theme-color:red;
+
+
+//used as function
+
+//passing argument to make it dynamic..we need to pass default value in argument..in case we forget to pass argument down
+// it takes default color
+@mixin blockButton($text-color: black) {
+    border-radius: 10px;
+    color: $text-color;
+    display: inline-block;
+    border:none;
+    padding: 15px 30px;
+}
+
+h1{
+    color: $theme-color;
+}
+
+p{
+    color: $theme-color;
+}
+
+// nesting 
+.content{
+    ul {
+        li {
+            a {
+                color: red
+            }
+        }
+    }
+}
+
+button{
+    background-color: purple;
+  @include blockButton(red)
+
+}
+
+.newButton{
+    background-color: pink;
+   
+    @include blockButton()
+}

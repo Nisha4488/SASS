@@ -1,0 +1,31 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: red;
+}
+
+.content ul li a {
+  color: red;
+}
+
+button {
+  background-color: purple;
+  border-radius: 10px;
+  color: red;
+  display: inline-block;
+  border: none;
+  padding: 15px 30px;
+}
+
+.newButton {
+  background-color: pink;
+  border-radius: 10px;
+  color: black;
+  display: inline-block;
+  border: none;
+  padding: 15px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
