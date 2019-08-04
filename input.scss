@@ -1,5 +1,9 @@
 //using partials and imports to modularize scss file..suppose you have bunch number of colors..its better to maintain in different file
 //just need to use import..and use underscore before creatimng new partial file this will make sure these files aren't complied as css
+//and while importing those files we don't need underscore(_) 
+
+
+// don't forget to add semicolon after end of every staments
 @import "colors";
 @import "mixins";
 
@@ -18,6 +22,11 @@
 //     border:none;
 //     padding: 15px 30px;
 // }
+
+//creating custom function
+@function double($a){
+    @return ($a*2)
+}
 
 h1{
     color: $theme-color;
@@ -48,4 +57,21 @@ button{
     background-color: pink;
    
     @include blockButton()
+}
+
+//adding basic arithmetic in sass (+, -, %, *)
+.container{
+    width:100%;
+    .leftContainer{
+        float: left;
+        background-color:red;
+        width:(100% / 2);
+        height:100px;
+    }
+    .rightContainer{
+        float: right;
+        background-color:yellow;
+        width:(100% / 2);
+        height:double(50px);
+    }
 }

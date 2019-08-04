@@ -28,4 +28,20 @@ button {
   padding: 15px 30px;
 }
 
+.container {
+  width: 100%;
+}
+.container .leftContainer {
+  float: left;
+  background-color: red;
+  width: 50%;
+  height: 100px;
+}
+.container .rightContainer {
+  float: right;
+  background-color: yellow;
+  width: 50%;
+  height: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
