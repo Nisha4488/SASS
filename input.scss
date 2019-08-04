@@ -1,19 +1,23 @@
+//using partials and imports to modularize scss file..suppose you have bunch number of colors..its better to maintain in different file
+//just need to use import..and use underscore before creatimng new partial file this will make sure these files aren't complied as css
+@import "colors";
+@import "mixins";
+
 //used as variable
 
-$theme-color:red;
+// $theme-color:red;
 
 
 //used as function
-
 //passing argument to make it dynamic..we need to pass default value in argument..in case we forget to pass argument down
 // it takes default color
-@mixin blockButton($text-color: black) {
-    border-radius: 10px;
-    color: $text-color;
-    display: inline-block;
-    border:none;
-    padding: 15px 30px;
-}
+// @mixin blockButton($text-color: black) {
+//     border-radius: 10px;
+//     color: $text-color;
+//     display: inline-block;
+//     border:none;
+//     padding: 15px 30px;
+// }
 
 h1{
     color: $theme-color;

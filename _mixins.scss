@@ -1,0 +1,7 @@
+@mixin blockButton($text-color: black) {
+    border-radius: 10px;
+    color: $text-color;
+    display: inline-block;
+    border:none;
+    padding: 15px 30px;
+}
